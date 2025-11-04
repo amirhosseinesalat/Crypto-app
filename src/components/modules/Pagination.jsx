@@ -1,30 +1,40 @@
-import { useState } from "react";
+import styles from "./Pagination.module.css";
 
-function Pagination({page , setPage}) {
- 
+function Pagination({ page, setPage }) {
   const perviousHandler = () => {
     if (page <= 1) return;
     setPage((page) => page - 1);
   };
   const nextHandler = () => {
-    if (page >= 10) return;
+    if (page >= 5) return;
     setPage((page) => page + 1);
   };
   return (
-    <div>
-      <button onClick={perviousHandler}>Pervious</button>
-      <p style={{ color: page === 1 ? "red" : "inherit" }}>1</p>
-      <p>2</p>
-      <span>...</span>
-      {page > 2 && page < 10 && (
+    <div className={styles.pagination}>
+      <button
+        onClick={perviousHandler}
+        className={page === 1 ? styles.disabled : null}
+      >
+        Pervious
+      </button>
+      <p className={page === 1 ? styles.selected : null}>1</p>
+      <p className={page === 2 ? styles.selected : null}>2</p>
+
+      {page > 2 && page < 4 && (
         <>
-          <p>{page}</p>
           <span>...</span>
+          <p className={styles.selected}>{page}</p>
         </>
       )}
-      <p>9</p>
-      <p>10</p>
-      <button onClick={nextHandler}>Next</button>
+      <span>...</span>
+      <p className={page === 4 ? styles.selected : null}>4</p>
+      <p className={page === 5 ? styles.selected : null}>5</p>
+      <button
+        onClick={nextHandler}
+        className={page === 5 ? styles.disabled : null}
+      >
+        Next
+      </button>
     </div>
   );
 }
