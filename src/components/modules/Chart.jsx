@@ -1,9 +1,16 @@
+import { useState } from "react";
 import styles from "./Chart.module.css";
+import convertData from "../../helpers/convertData";
 function Chart({ chart, setChart }) {
+  const [type, setType] = useState("prices");
+  console.log("chart structure:", chart);
+
+  console.log(convertData(chart, type));
   return (
     <div className={styles.container}>
-    
-      <span className={styles.cross} onClick={() => setChart(null)}>X</span>
+      <span className={styles.cross} onClick={() => setChart(null)}>
+        X
+      </span>
       <div className={styles.chart}></div>
     </div>
   );
