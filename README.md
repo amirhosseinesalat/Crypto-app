@@ -1,16 +1,118 @@
-# React + Vite
+🪙 Crypto Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React application that displays real-time cryptocurrency market data using the CoinGecko API.
+Users can view prices, 24-hour changes, market caps, and even open a detailed 7-day chart for each coin.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Fetches live crypto market data from CoinGecko API
 
-## React Compiler
+Displays key info: name, symbol, price, 24h change, volume, and market cap
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Interactive 7-day line chart with Recharts
 
-## Expanding the ESLint configuration
+Search and filter functionality
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Pagination support
+
+Responsive design for all devices
+
+Toast notifications and loading spinners
+
+🧩 Tech Stack
+
+React.js (Vite)
+
+CSS Modules
+
+Recharts
+
+React Hot Toast
+
+React Loader Spinner
+
+CoinGecko API
+
+⚙️ Installation
+# Clone this repository
+git clone https://github.com/<your-username>/<repo-name>.git
+
+# Go to project directory
+cd <repo-name>
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+📁 Project Structure
+src/
+ ├── assets/           # Images and icons
+ ├── components/
+ │   ├── modules/      # TableCoin, Chart, Search, etc.
+ │   └── pages/        # HomePage
+ ├── helpers/          # Utility functions (convertData.js)
+ ├── services/         # API functions (cryptoApi.js)
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css
+
+🖼️ Preview
+
+Click on a coin symbol to view its detailed chart.
+You can also switch between Prices, Market Cap, and Total Volume charts.
+
+📦 API Reference
+
+Base URL: https://api.coingecko.com/api/v3
+
+Endpoints used:
+
+/coins/markets
+
+/search
+
+/coins/{id}/market_chart
+
+✨ Author
+
+👨‍💻 Developed by [Your Name] — Frontend Developer
+
+💬 License
+
+This project is open source and available under the MIT License
+.
+
+🇮🇷 توضیحات فارسی
+
+این پروژه یک اپلیکیشن واکنش‌گرا با React است که اطلاعات لحظه‌ای بازار ارزهای دیجیتال را از CoinGecko API دریافت می‌کند.
+کاربر می‌تواند قیمت‌ها، تغییرات ۲۴ ساعته، حجم معاملات و نمودار ۷ روز اخیر هر کوین را مشاهده کند.
+
+✨ ویژگی‌ها
+
+دریافت داده‌های لحظه‌ای از CoinGecko
+
+نمایش نام، نماد، قیمت، درصد تغییر، حجم و مارکت کپ
+
+نمودار ۷ روزه با Recharts
+
+جست‌وجو و فیلتر کردن کوین‌ها
+
+صفحه‌بندی (Pagination)
+
+طراحی ریسپانسیو برای همه‌ی دستگاه‌ها
+
+نوتیفیکیشن‌های زیبا با React Hot Toast
+
+نمایش لودینگ با React Loader Spinner
+
+🧠 تکنولوژی‌ها
+
+React.js - CSS Modules - Recharts - React Hot Toast - React Loader Spinner - CoinGecko API
+
+🧩 نحوه‌ی اجرا
+
+1️⃣ پروژه را کلون کن
+2️⃣ وابستگی‌ها را نصب کن (npm install)
+3️⃣ پروژه را اجرا کن (npm run dev)
