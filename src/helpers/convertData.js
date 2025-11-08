@@ -1,11 +1,15 @@
-const convertData = (data, type) => {
-  if (!data || !data[type]) return [];
+function convertData(chart, type) {
+  if (!chart) return [];
+  let key = type;
+  if (type === "market_cap") key = "market_caps";
+  if (type === "total_volume") key = "total_volumes";
 
-  const convertedData = data[type].map((item) => ({
-    date: item[0],
+  const data = chart[key]?.map((item) => ({
+    date: new Date(item[0]).toLocaleDateString(),
     [type]: item[1],
   }));
 
-  return convertedData;
-};
+  return data || [];
+}
+
 export default convertData;

@@ -14,7 +14,12 @@ import styles from "./Chart.module.css";
 import convertData from "../../helpers/convertData";
 function Chart({ chart, setChart }) {
   const [type, setType] = useState("prices");
-
+  const typeHandler = (event) => {
+    if (event.target.tagName === "BUTTON") {
+      const type = event.target.innerText.toLowerCase().replace(" ", "_");
+      setType(type);
+    }
+  };
   console.log(convertData(chart, type));
   return (
     <div className={styles.container}>
@@ -29,10 +34,16 @@ function Chart({ chart, setChart }) {
         <div className={styles.graph}>
           <ChartComponent data={convertData(chart, type)} type={type} />
         </div>
-        <div className={styles.types}>
-          <button>Prices</button>
-          <button>Market Cap</button>
-          <button>Total Volume</button>
+        <div className={styles.types} onClick={typeHandler}>
+          <button className={type === "prices" ? styles.selected : null}>
+            Prices
+          </button>
+          <button className={type === "market_cap" ? styles.selected : null}>
+            Market Cap
+          </button>
+          <button className={type === "total_volume" ? styles.selected : null}>
+            Total Volume
+          </button>
         </div>
         <div className={styles.details}>
           <div>
