@@ -1,25 +1,37 @@
-🪙 Crypto Tracker App
+Crypto Tracker App
 
-A responsive React application that displays real-time cryptocurrency market data using the CoinGecko API.
-Users can view prices, 24-hour changes, market caps, and even open a detailed 7-day chart for each coin.
+A responsive cryptocurrency tracking application built with React.
+This project fetches real-time market data from the CoinGecko API and allows users to explore prices, market changes, and historical charts for popular cryptocurrencies.
 
-🚀 Features
+The goal of this project was to practice working with external APIs, data visualization, pagination, and clean UI design.
 
-Fetches live crypto market data from CoinGecko API
+Features
 
-Displays key info: name, symbol, price, 24h change, volume, and market cap
+Fetches live cryptocurrency data from the CoinGecko API
 
-Interactive 7-day line chart with Recharts
+Displays key information such as:
+
+Coin name and symbol
+
+Current price
+
+24-hour price change
+
+Trading volume
+
+Market capitalization
+
+Interactive 7-day charts for each coin
 
 Search and filter functionality
 
-Pagination support
+Pagination for large datasets
 
-Responsive design for all devices
+Responsive layout for different screen sizes
 
-Toast notifications and loading spinners
+Toast notifications and loading indicators
 
-🧩 Tech Stack
+Tech Stack
 
 React.js (Vite)
 
@@ -33,39 +45,53 @@ React Loader Spinner
 
 CoinGecko API
 
-⚙️ Installation
-# Clone this repository
-git clone https://github.com/<your-username>/<repo-name>.git
+Getting Started
 
-# Go to project directory
-cd <repo-name>
+Clone the repository:
 
-# Install dependencies
+git clone https://github.com/your-username/crypto-tracker.git
+cd crypto-tracker
+
+
+Install dependencies:
+
 npm install
 
-# Start the development server
+
+Run the project:
+
 npm run dev
 
-📁 Project Structure
+Project Structure
 src/
- ├── assets/           # Images and icons
- ├── components/
- │   ├── modules/      # TableCoin, Chart, Search, etc.
- │   └── pages/        # HomePage
- ├── helpers/          # Utility functions (convertData.js)
- ├── services/         # API functions (cryptoApi.js)
- ├── App.jsx
- ├── main.jsx
- └── index.css
+├── assets/        # Images and icons
+├── components/
+│   ├── modules/   # Coin table, charts, search components, etc.
+│   └── pages/     # Home page
+├── helpers/       # Utility functions
+├── services/      # API services (CoinGecko)
+├── App.jsx
+├── main.jsx
+└── index.css
 
-🖼️ Preview
+How It Works
 
-Click on a coin symbol to view its detailed chart.
-You can also switch between Prices, Market Cap, and Total Volume charts.
+The app fetches market data using CoinGecko public APIs.
 
-📦 API Reference
+Users can search for specific coins by name or symbol.
 
-Base URL: https://api.coingecko.com/api/v3
+Clicking on a coin opens a detailed view with a 7-day chart.
+
+Charts can display price, market cap, or total volume.
+
+Pagination is used to improve performance and usability.
+
+API Reference
+
+Base URL:
+
+https://api.coingecko.com/api/v3
+
 
 Endpoints used:
 
@@ -75,44 +101,8 @@ Endpoints used:
 
 /coins/{id}/market_chart
 
-✨ Author
+Developer
 
-👨‍💻 Developed by [Your Name] — Frontend Developer
-
-💬 License
-
-This project is open source and available under the MIT License
-.
-
-🇮🇷 توضیحات فارسی
-
-این پروژه یک اپلیکیشن واکنش‌گرا با React است که اطلاعات لحظه‌ای بازار ارزهای دیجیتال را از CoinGecko API دریافت می‌کند.
-کاربر می‌تواند قیمت‌ها، تغییرات ۲۴ ساعته، حجم معاملات و نمودار ۷ روز اخیر هر کوین را مشاهده کند.
-
-✨ ویژگی‌ها
-
-دریافت داده‌های لحظه‌ای از CoinGecko
-
-نمایش نام، نماد، قیمت، درصد تغییر، حجم و مارکت کپ
-
-نمودار ۷ روزه با Recharts
-
-جست‌وجو و فیلتر کردن کوین‌ها
-
-صفحه‌بندی (Pagination)
-
-طراحی ریسپانسیو برای همه‌ی دستگاه‌ها
-
-نوتیفیکیشن‌های زیبا با React Hot Toast
-
-نمایش لودینگ با React Loader Spinner
-
-🧠 تکنولوژی‌ها
-
-React.js - CSS Modules - Recharts - React Hot Toast - React Loader Spinner - CoinGecko API
-
-🧩 نحوه‌ی اجرا
-
-1️⃣ پروژه را کلون کن
-2️⃣ وابستگی‌ها را نصب کن (npm install)
-3️⃣ پروژه را اجرا کن (npm run dev)
+Amirhossein Esalat
+Frontend Developer
+Email: sltamirhosein@gmail.com
