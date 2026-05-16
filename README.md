@@ -3,7 +3,7 @@
 A responsive React application that displays real-time cryptocurrency market data using the CoinGecko API.
 Users can view prices, 24-hour changes, market caps, and even open a detailed 7-day chart for each coin.
 
-🚀 Features
+ Features
 
 Fetches live crypto market data from CoinGecko API
 
@@ -19,7 +19,7 @@ Responsive design for all devices
 
 Toast notifications and loading spinners
 
-🧩 Tech Stack
+ Tech Stack
 
 React.js (Vite)
 
@@ -33,7 +33,7 @@ React Loader Spinner
 
 CoinGecko API
 
-⚙️ Installation
+ Installation
 # Clone this repository
 git clone https://github.com/<your-username>/<repo-name>.git
 
@@ -46,7 +46,7 @@ npm install
 # Start the development server
 npm run dev
 
-📁 Project Structure
+ Project Structure
 src/
  ├── assets/           # Images and icons
  ├── components/
@@ -58,12 +58,12 @@ src/
  ├── main.jsx
  └── index.css
 
-🖼️ Preview
+ Preview
 
 Click on a coin symbol to view its detailed chart.
 You can also switch between Prices, Market Cap, and Total Volume charts.
 
-📦 API Reference
+ API Reference
 
 Base URL: https://api.coingecko.com/api/v3
 
@@ -75,11 +75,11 @@ Endpoints used:
 
 /coins/{id}/market_chart
 
-✨ Author
+ Author
 
-👨‍💻 Developed by [Your Name] — Frontend Developer
+ Developed by Amirhosein Esalatfae— Frontend Developer
 
-💬 License
+ License
 
 This project is open source and available under the MIT License
 .
@@ -89,7 +89,7 @@ This project is open source and available under the MIT License
 این پروژه یک اپلیکیشن واکنش‌گرا با React است که اطلاعات لحظه‌ای بازار ارزهای دیجیتال را از CoinGecko API دریافت می‌کند.
 کاربر می‌تواند قیمت‌ها، تغییرات ۲۴ ساعته، حجم معاملات و نمودار ۷ روز اخیر هر کوین را مشاهده کند.
 
-✨ ویژگی‌ها
+ویژگی‌ها
 
 دریافت داده‌های لحظه‌ای از CoinGecko
 
